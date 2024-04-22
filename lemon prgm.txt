@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int n,rem;
+    printf("Enter the no of elements\n");
+    scanf("%d",&n);
+    if(n<21)
+    {
+    rem=n-21;
+    printf("%d num of lemon is unsufficient",rem);
+    }
+    else if(n==21)
+    {
+    printf("it is sufficient");
+    printf("\nyou can distrubute the lemon to\n7 for brahma\n7 for vishnu\n 7 for maheshwar");
+    }
+    else 
+    {
+    rem=n-21;
+    printf("%d more lemon",rem);
+    }
+    return 0;
+}
