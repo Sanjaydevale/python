@@ -1,15 +1,9 @@
-names="balaji srinivasan"
-print(names)
-print(names[:])
-print(names[2:])
-print(names[-1:])
-print(names[-5:-1])
-print(names[::-1])
-print(names[::-3])
-sep='-'.join(names[::2])
-print(sep)
-for i in range(0,len(names)):
-    if(i%3==0 and i!=0):
-        print('-',end='')
-    else:
-        print(names[i],end='')
+def count_digits_and_letters(string):
+    num_letters = sum(1 for char in string if char.isalpha())
+    num_digits = sum(1 for char in string if char.isdigit())
+    return num_letters, num_digits
+
+input_string = input("Enter a string: ")
+letters, digits = count_digits_and_letters(input_string)
+print("Letters:", letters)
+print("Digits:", digits)
